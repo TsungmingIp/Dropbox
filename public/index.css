@@ -1,0 +1,31 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+
+
+.AllContainer {
+    
+    padding: 30px;
+    background-color: aliceblue;
+}
+
+h1 {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 40px;
+    
+}
+
+.form-container {
+    margin:  50px;
+}
+
+.container {
+    justify-content: center;
+    text-align: center;
+    background-color: aquamarine; 
+    
+    margin: 40px;
+}

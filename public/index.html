@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DropboxCopy</title>
+    <link rel="stylesheet" href="/index.css">
+</head>
+<body class="container">
+    
+    <h1>Dropbox Copy - Step 3 - make html and function</h1>
+    <br>
+    <br>
+    <!-- post data to the backend -->
+    <form class="form-container" method="POST" action="/" enctype="multipart/form-data">
+    <!--in the input below, the multiple and size(num of files) allows to grab more than one file to select when uploading -->
+    <input 
+    type="file" 
+    name="dropbox" 
+    id="fileUpload" 
+    multiple
+    size= "20" 
+    onchange="readTheFile()"/>
+  
+
+<input class="fileSubmit" type="submit" value="submit"/>
+</form>
+<p id="fileInformation"></p>
+<p id="files"></p>
+
+<div class="AllContainer">
+<p>Choose files to upload</p>
+<br>
+<br>
+<p>Submit to go to download pages</p>
+</div>
+<script>document.body.addEventListener("click", () => {
+    console.log("hello")
+})
+</script>
+
+<script async defer>
+    //function runs when input of id fileUpload changes
+    function readTheFile() {
+    //grab element id
+    let file = document.querySelector("#fileUpload");
+    //create an empty string
+    let infoAboutFile = "";
+    console.log("File",file.files);
+    let allMyFiles = file.files;
+    let objectEntries = Object.entries(allMyFiles);
+    console.log(objectEntries.length);
+}
+
+
+
+
+</script>
+    
+</body>
+</html>
