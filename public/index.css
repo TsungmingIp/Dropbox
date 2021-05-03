@@ -3,19 +3,19 @@
     padding: 0;
 }
 
+input {
+    padding: 10px;
+    font-size: 20px;
+}
 
-
-
-.AllContainer {
-    
+.AllContainer { 
     padding: 30px;
     background-color: aliceblue;
 }
 
 h1 {
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 40px;
-    
+    margin: 30pX;   
 }
 
 .form-container {
@@ -26,6 +26,4 @@ h1 {
     justify-content: center;
     text-align: center;
     background-color: aquamarine; 
-    
-    margin: 40px;
 }
